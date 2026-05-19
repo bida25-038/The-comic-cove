@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="650" viewBox="0 0 1200 650">
+<defs>
+  <linearGradient id="bg" x1="0" y1="0" x2="0" y2="1"><stop offset="0%" stop-color="#3a2414"/><stop offset="100%" stop-color="#1a1009"/></linearGradient>
+  <linearGradient id="glow" x1="0" y1="0" x2="1" y2="0"><stop offset="0%" stop-color="#e0a63a"/><stop offset="100%" stop-color="#8a4d12"/></linearGradient>
+</defs>
+<rect width="1200" height="650" fill="url(#bg)"/>
+<rect x="80" y="60" width="1040" height="530" rx="18" fill="#0b0f15" stroke="#9b6b20" stroke-width="4"/>
+<g fill="#6b4617">
+  <rect x="130" y="120" width="940" height="24"/>
+  <rect x="130" y="230" width="940" height="24"/>
+  <rect x="130" y="340" width="940" height="24"/>
+  <rect x="130" y="450" width="940" height="24"/>
+</g>
+<g fill="#d09a35">
+  <rect x="160" y="145" width="70" height="70"/><rect x="245" y="145" width="70" height="70"/><rect x="330" y="145" width="70" height="70"/><rect x="415" y="145" width="70" height="70"/><rect x="500" y="145" width="70" height="70"/><rect x="585" y="145" width="70" height="70"/><rect x="670" y="145" width="70" height="70"/><rect x="755" y="145" width="70" height="70"/><rect x="840" y="145" width="70" height="70"/>
+  <rect x="160" y="255" width="70" height="70"/><rect x="245" y="255" width="70" height="70"/><rect x="330" y="255" width="70" height="70"/><rect x="415" y="255" width="70" height="70"/><rect x="500" y="255" width="70" height="70"/><rect x="585" y="255" width="70" height="70"/><rect x="670" y="255" width="70" height="70"/><rect x="755" y="255" width="70" height="70"/><rect x="840" y="255" width="70" height="70"/>
+</g>
+<rect x="930" y="150" width="120" height="280" fill="#402716"/>
+<circle cx="990" cy="210" r="40" fill="#c51414"/>
+<circle cx="990" cy="310" r="40" fill="#e0a63a"/>
+<rect x="960" y="390" width="60" height="20" fill="#e6dfcf"/>
+<text x="120" y="540" fill="#f7f3eb" font-family="Arial" font-size="42" font-weight="700">THE COMIC COVE</text>
+<text x="120" y="575" fill="#d6c8b3" font-family="Arial" font-size="24">A warm, welcoming comic shop interior</text>
+</svg>

@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=yes, maximum-scale=5" />
+  <title>Catalogue | The Comic Cove</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="">
+  
+<header class="site-header">
+  <div class="topbar container">
+    <a class="logo" href="index.html"><span class="logo-top">THE</span><span class="logo-red">COMIC</span><span class="logo-bottom">COVE</span></a>
+    <div class="header-icons">
+      <button aria-label="Search" class="icon-btn search-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <circle cx="11" cy="11" r="6" />
+          <line x1="21" y1="21" x2="16.65" y2="16.65" />
+        </svg>
+      </button>
+      <a aria-label="Login" class="icon-link login-link" href="login.html">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
+          <circle cx="12" cy="7" r="4" />
+        </svg>
+      </a>
+      <button aria-label="Cart" class="icon-btn cart-btn cart-view-btn">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+          <path d="M6 6h15l-1.5 9h-13z" />
+          <path d="M6 6l-2-4H1" />
+          <circle cx="9" cy="20" r="1" />
+          <circle cx="18" cy="20" r="1" />
+        </svg>
+        <span class="cart-count">0</span>
+      </button>
+    </div>
+  </div>
+  <nav class="main-nav"><div class="container nav-inner"><a href="index.html" class="">NEW RELEASES</a>
+<a href="catalogue.html" class="active">CATALOGUE</a>
+<a href="events.html" class="">EVENTS</a>
+<a href="community.html" class="">COMMUNITY</a>
+<a href="subscription.html" class="">SUBSCRIPTIONS</a>
+<a href="about-the-cove.html" class="">ABOUT THE COVE</a>
+<a href="contact-details.html" class="">CONTACT</a></div></nav>
+</header>
+
+  <main class="page-shell">
+    
+<section class="container">
+  <div class="center-copy">
+    <h1 class="page-title">CATALOGUE</h1>
+    <p class="page-subtitle">Browse our extensive collection of comics and collectibles.</p>
+    <div class="section-divider"><span>★</span></div>
+  </div>
+  <div class="catalogue-layout">
+    <aside class="filters">
+      <h2>FILTERS</h2>
+      <div class="group">
+        <h3>Categories</h3>
+        <label><input type="checkbox" data-filter="category" value="Manga"> Manga</label>
+        <label><input type="checkbox" data-filter="category" value="Superhero"> Superhero</label>
+        <label><input type="checkbox" data-filter="category" value="Sci-Fi"> Sci-Fi</label>
+        <label><input type="checkbox" data-filter="category" value="Fantasy"> Fantasy</label>
+        <label><input type="checkbox" data-filter="category" value="Horror"> Horror</label>
+      </div>
+      <div class="group">
+        <h3>Format</h3>
+        <label><input type="checkbox" data-filter="format" value="Comic Book"> Comic Book</label>
+        <label><input type="checkbox" data-filter="format" value="Graphic Novel"> Graphic Novel</label>
+        <label><input type="checkbox" data-filter="format" value="Hardcover"> Hardcover</label>
+        <label><input type="checkbox" data-filter="format" value="Collectible"> Collectible</label>
+      </div>
+      <div>
+        <h3>Price Range</h3>
+        <div class="price-range">
+          <div class="price-badge">P1.00</div>
+          <div class="price-badge">P10.00+</div>
+        </div>
+        <div class="range-line"></div>
+        <div class="price-options">
+          <label><input type="radio" name="price-range" data-filter="price" value="all" checked> All prices</label>
+          <label><input type="radio" name="price-range" data-filter="price" value="under-10"> Under P10.00</label>
+          <label><input type="radio" name="price-range" data-filter="price" value="10-plus"> P10.00+</label>
+        </div>
+        <button id="apply-filters" class="btn no-arrow" type="button" style="width:100%;">APPLY</button>
+      </div>
+    </aside>
+    <section>
+      <div class="catalogue-head">
+        <label for="sort">Sort by:</label>
+        <select id="sort"><option>Featured</option><option>Price Low to High</option><option>Price High to Low</option><option>Newest</option></select>
+      </div>
+      <div class="catalogue-grid">
+        <article class="comic-thumb" data-product="demon-slayer">
+          <img src="assets/images/covers/demon_slayer_ kimetsu-no-yaiba-vol_20.jpg" alt="Demon Slayer volume 20 cover">
+          <div class="product-meta">
+            <div class="product-title">Demon Slayer</div>
+            <div class="product-row"><span class="product-price">P11.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="the-walking-dead">
+          <img src="assets/images/covers/the-walking-dead.jpg" alt="The Walking Dead cover">
+          <div class="product-meta">
+            <div class="product-title">The Walking Dead</div>
+            <div class="product-row"><span class="product-price">P12.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="x-men-gold">
+          <img src="assets/images/covers/x-men_gold.jpg" alt="X-Men Gold cover">
+          <div class="product-meta">
+            <div class="product-title">X-Men Gold</div>
+            <div class="product-row"><span class="product-price">P14.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="saga-volume-1">
+          <img src="assets/images/covers/saga_volume_1.jpg" alt="Saga Volume 1 cover">
+          <div class="product-meta">
+            <div class="product-title">Saga Volume 1</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="hellboy">
+          <img src="assets/images/covers/hellboy.jpg" alt="Hellboy cover">
+          <div class="product-meta">
+            <div class="product-title">Hellboy</div>
+            <div class="product-row"><span class="product-price">P10.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="batman-detective">
+          <img src="assets/images/covers/batman-detective.jpg.jpg" alt="Batman Detective cover">
+          <div class="product-meta">
+            <div class="product-title">Batman: Detective</div>
+            <div class="product-row"><span class="product-price">P15.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="ant-man">
+          <img src="assets/images/covers/marvel/antman.jpg" alt="Ant-Man cover">
+          <div class="product-meta">
+            <div class="product-title">Ant-Man</div>
+            <div class="product-row"><span class="product-price">P13.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="black-panther">
+          <img src="assets/images/covers/marvel/black_panther_wakanda-forever.jpg" alt="Black Panther Wakanda Forever cover">
+          <div class="product-meta">
+            <div class="product-title">Black Panther: Wakanda Forever</div>
+            <div class="product-row"><span class="product-price">P20.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="invincible">
+          <img src="assets/images/covers/indie/invincible_the_viltrumite_war_vol14.jpg" alt="Invincible Viltrumite War volume 14 cover">
+          <div class="product-meta">
+            <div class="product-title">Invincible</div>
+            <div class="product-row"><span class="product-price">P22.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+
+        <article class="comic-thumb" data-product="blue-lock">
+          <img src="assets/images/covers/anime/blue_lock.jpg" alt="Blue Lock cover">
+          <div class="product-meta">
+            <div class="product-title">Blue Lock</div>
+            <div class="product-row"><span class="product-price">P9.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="chainsaw-man">
+          <img src="assets/images/covers/anime/chainsaw_man_volume 1.jpg" alt="Chainsaw Man volume 1 cover">
+          <div class="product-meta">
+            <div class="product-title">Chainsaw Man Vol. 1</div>
+            <div class="product-row"><span class="product-price">P16.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="deadly-class">
+          <img src="assets/images/covers/anime/deadly_class.jpg" alt="Deadly Class cover">
+          <div class="product-meta">
+            <div class="product-title">Deadly Class</div>
+            <div class="product-row"><span class="product-price">P12.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="dragon-ball">
+          <img src="assets/images/covers/anime/dragon_ball-vol2.jpg" alt="Dragon Ball vol 2 cover">
+          <div class="product-meta">
+            <div class="product-title">Dragon Ball Vol. 2</div>
+            <div class="product-row"><span class="product-price">P10.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="hajime-no-ippo">
+          <img src="assets/images/covers/anime/ippo_the_fighting.jpg" alt="Hajime no Ippo cover">
+          <div class="product-meta">
+            <div class="product-title">Hajime no Ippo</div>
+            <div class="product-row"><span class="product-price">P14.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="jujutsu-kaisen">
+          <img src="assets/images/covers/anime/jujutsu_kaisen_vol4.jpg" alt="Jujutsu Kaisen volume 4 cover">
+          <div class="product-meta">
+            <div class="product-title">Jujutsu Kaisen Vol. 4</div>
+            <div class="product-row"><span class="product-price">P17.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="my-hero-academia">
+          <img src="assets/images/covers/anime/my_hero_academia_vol1.jpg" alt="My Hero Academia volume 1 cover">
+          <div class="product-meta">
+            <div class="product-title">My Hero Academia Vol. 1</div>
+            <div class="product-row"><span class="product-price">P15.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="naruto">
+          <img src="assets/images/covers/anime/naruto_vol66.jpg" alt="Naruto volume 66 cover">
+          <div class="product-meta">
+            <div class="product-title">Naruto Vol. 66</div>
+            <div class="product-row"><span class="product-price">P19.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="one-piece">
+          <img src="assets/images/covers/anime/one_piece,vol_61.jpg" alt="One Piece volume 61 cover">
+          <div class="product-meta">
+            <div class="product-title">One Piece Vol. 61</div>
+            <div class="product-row"><span class="product-price">P16.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="deadpool">
+          <img src="assets/images/covers/dc/deadpool.jpg" alt="Deadpool cover">
+          <div class="product-meta">
+            <div class="product-title">Deadpool</div>
+            <div class="product-row"><span class="product-price">P14.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="aquaman">
+          <img src="assets/images/covers/dc/aquaman.jpg" alt="Aquaman cover">
+          <div class="product-meta">
+            <div class="product-title">Aquaman</div>
+            <div class="product-row"><span class="product-price">P13.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="harley-quinn">
+          <img src="assets/images/covers/dc/harley-quinn.jpg" alt="Harley Quinn cover">
+          <div class="product-meta">
+            <div class="product-title">Harley Quinn</div>
+            <div class="product-row"><span class="product-price">P12.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="iron-man">
+          <img src="assets/images/covers/marvel/iron_man-3.jpg" alt="Iron Man 3 cover">
+          <div class="product-meta">
+            <div class="product-title">Iron Man 3</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="moon-knight">
+          <img src="assets/images/covers/marvel/moonknight.jpg" alt="Moon Knight cover">
+          <div class="product-meta">
+            <div class="product-title">Moon Knight</div>
+            <div class="product-row"><span class="product-price">P17.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="spider-man-into-the-spider-verse">
+          <img src="assets/images/covers/marvel/spiderman_into_the_spider_verse.jpg" alt="Spider-Man: Into the Spider-Verse cover">
+          <div class="product-meta">
+            <div class="product-title">Spider-Man: Into the Spider-Verse</div>
+            <div class="product-row"><span class="product-price">P21.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="stranger-things">
+          <img src="assets/images/covers/indie/stranger_things_demogorgon_trap.jpg" alt="Stranger Things Demogorgon Trap cover">
+          <div class="product-meta">
+            <div class="product-title">Stranger Things</div>
+            <div class="product-row"><span class="product-price">P19.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="avengers-doomsday">
+          <img src="assets/images/covers/marvel/avengers_doomsday.jpg" alt="Avengers Doomsday cover">
+          <div class="product-meta">
+            <div class="product-title">Avengers: Doomsday</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="captain-america-civil-war">
+          <img src="assets/images/covers/marvel/captain_america_civil_war.jpg" alt="Captain America Civil War cover">
+          <div class="product-meta">
+            <div class="product-title">Captain America: Civil War</div>
+            <div class="product-row"><span class="product-price">P17.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="doctor-strange-multiverse">
+          <img src="assets/images/covers/marvel/doctorstrange-in-the-multiverse-of-madness.jpg" alt="Doctor Strange Multiverse of Madness cover">
+          <div class="product-meta">
+            <div class="product-title">Doctor Strange: Multiverse of Madness</div>
+            <div class="product-row"><span class="product-price">P20.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="guardians-galaxy-vol3">
+          <img src="assets/images/covers/marvel/guardians-of-the-galaxy.%20vol3.jpg" alt="Guardians of the Galaxy Vol 3 cover">
+          <div class="product-meta">
+            <div class="product-title">Guardians of the Galaxy Vol. 3</div>
+            <div class="product-row"><span class="product-price">P21.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="punisher-vengeance">
+          <img src="assets/images/covers/marvel/the_punisher_vegeance_belong_to_bushwacker.jpg" alt="The Punisher Vengeance belongs to Bushwacker cover">
+          <div class="product-meta">
+            <div class="product-title">The Punisher: Vengeance</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="venom-lethal-protector">
+          <img src="assets/images/covers/marvel/Venom_lethal_protector.jpg" alt="Venom Lethal Protector cover">
+          <div class="product-meta">
+            <div class="product-title">Venom: Lethal Protector</div>
+            <div class="product-row"><span class="product-price">P16.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="deathstroke-borgia-plague">
+          <img src="assets/images/covers/dc/deathstroke_the_borgia_plague.jpg" alt="Deathstroke The Borgia Plague cover">
+          <div class="product-meta">
+            <div class="product-title">Deathstroke: The Borgia Plague</div>
+            <div class="product-row"><span class="product-price">P17.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="justice-league-unlimited-vol6">
+          <img src="assets/images/covers/dc/justice_league_unlimited_vol6.jpg" alt="Justice League Unlimited Vol 6 cover">
+          <div class="product-meta">
+            <div class="product-title">Justice League Unlimited Vol. 6</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="robin-tim-drake">
+          <img src="assets/images/covers/dc/robin_tim_drake.jpg" alt="Robin Tim Drake cover">
+          <div class="product-meta">
+            <div class="product-title">Robin: Tim Drake</div>
+            <div class="product-row"><span class="product-price">P15.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="shazam-new-beginning">
+          <img src="assets/images/covers/dc/shazam_the_new_beginning_issue1.jpg" alt="Shazam The New Beginning issue 1 cover">
+          <div class="product-meta">
+            <div class="product-title">Shazam: The New Beginning</div>
+            <div class="product-row"><span class="product-price">P15.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="superman-graphical-novel">
+          <img src="assets/images/covers/dc/superman_graphicalnovel.jpg" alt="Superman graphical novel cover">
+          <div class="product-meta">
+            <div class="product-title">Superman Graphical Novel</div>
+            <div class="product-row"><span class="product-price">P19.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="flash-fastest-man-alive">
+          <img src="assets/images/covers/dc/the_flash_fastestman%20alive.jpg" alt="The Flash Fastest Man Alive cover">
+          <div class="product-meta">
+            <div class="product-title">The Flash: Fastest Man Alive</div>
+            <div class="product-row"><span class="product-price">P16.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="wonder-woman">
+          <img src="assets/images/covers/dc/wonder%20_woman.jpg" alt="Wonder Woman cover">
+          <div class="product-meta">
+            <div class="product-title">Wonder Woman</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="feverknights">
+          <img src="assets/images/covers/indie/feverknights.jpg" alt="Fever Knights cover">
+          <div class="product-meta">
+            <div class="product-title">Fever Knights</div>
+            <div class="product-row"><span class="product-price">P14.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="hitgirl-issue-nine">
+          <img src="assets/images/covers/indie/hitgirl_issue%20nine.jpg" alt="Hitgirl issue nine cover">
+          <div class="product-meta">
+            <div class="product-title">Hitgirl Issue Nine</div>
+            <div class="product-row"><span class="product-price">P13.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="nights-with-great-power">
+          <img src="assets/images/covers/indie/nights_with_great_power_comes.jpg" alt="Nights With Great Power Comes cover">
+          <div class="product-meta">
+            <div class="product-title">Nights With Great Power Comes</div>
+            <div class="product-row"><span class="product-price">P16.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="scrapper-issue-4">
+          <img src="assets/images/covers/indie/scrapper_issue4.jpg" alt="Scrapper issue 4 cover">
+          <div class="product-meta">
+            <div class="product-title">Scrapper Issue 4</div>
+            <div class="product-row"><span class="product-price">P12.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="my-hero-academia-graphic-novel-16">
+          <img src="assets/images/covers/anime/my-hero-academia-graphic-novel-volume-16.jpg" alt="My Hero Academia graphic novel volume 16 cover">
+          <div class="product-meta">
+            <div class="product-title">My Hero Academia Vol. 16</div>
+            <div class="product-row"><span class="product-price">P18.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="dandadan-vol1">
+          <img src="assets/images/covers/anime/dandadan,vol_ 1_volume 1.jpg" alt="Dandadan volume 1 cover">
+          <div class="product-meta">
+            <div class="product-title">Dandadan Vol. 1</div>
+            <div class="product-row"><span class="product-price">P15.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+        <article class="comic-thumb" data-product="peter-packer">
+          <img src="assets/images/covers/peter.packer..jpg" alt="Peter Packer cover">
+          <div class="product-meta">
+            <div class="product-title">Peter Packer</div>
+            <div class="product-row"><span class="product-price">P12.00</span><button class="btn btn-small" type="button" data-add-to-cart>ADD TO CART</button></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </div>
+</section>
+
+  </main>
+  
+<footer class="site-footer">
+  <div class="container footer-grid">
+    <section>
+      <a class="logo footer-logo" href="index.html"><span class="logo-top">THE</span><span class="logo-red">COMIC</span><span class="logo-bottom">COVE</span></a>
+      <p>Your ultimate destination for comics, collectibles, and community. Join The Comic Cove family and share your collection!</p>
+      <div class="mini-divider"><span>★</span></div>
+      <small>© 2025 The Comic Cove. All rights reserved.</small>
+    </section>
+    <section>
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="index.html">New Releases</a></li>
+        <li><a href="catalogue.html">Catalogue</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="community.html">Community</a></li>
+        <li><a href="subscription.html">Subscriptions</a></li>
+        <li><a href="about-the-cove.html">About the Cove</a></li>
+        <li><a href="contact-details.html">Contact</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>HELP</h4>
+      <ul>
+        <li><a href="about-the-cove.html">About the Cove</a></li>
+        <li><a href="contact-details.html">Contact &amp; Details</a></li>
+        <li><a href="#">Shipping &amp; Returns</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Privacy Policy</a></li>
+        <li><a href="#">Terms of Service</a></li>
+      </ul>
+    </section>
+    <section>
+      <h4>FOLLOW US</h4>
+      <div class="socials">
+        <a href="#" aria-label="Facebook">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M18 2h-3a4 4 0 00-4 4v3H8v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"/></svg>
+        </a>
+        <a href="#" aria-label="Instagram">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="3"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="Twitter">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M23.643 4.937c-.835.37-1.732.623-2.675.737a4.66 4.66 0 0 0-8.02 4.246A13.222 13.222 0 0 1 1.64 3.149a4.656 4.656 0 0 0 1.442 6.205c-.714-.023-1.387-.219-1.977-.547v.055c0 2.218 1.581 4.067 3.687 4.491a4.71 4.71 0 0 1-2.11.08c.597 1.863 2.33 3.22 4.382 3.259A9.373 9.373 0 0 1 .96 19.54a13.2 13.2 0 0 0 7.154 2.096c8.583 0 13.287-7.108 13.287-13.287 0-.202-.005-.404-.014-.605a9.48 9.48 0 0 0 2.339-2.413z"/></svg>
+        </a>
+        <a href="#" aria-label="Pinterest">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" focusable="false"><path d="M12.004 0C5.374 0 0 5.373 0 12.004c0 4.99 3.29 9.255 7.876 10.63-.109-.903-.206-2.293.042-3.283.226-.969 1.456-6.182 1.456-6.182s-.37-.741-.370-1.835c0-1.718.997-3 2.238-3 1.055 0 1.564.79 1.564 1.738 0 1.058-.673 2.639-1.02 4.102-.29 1.23.614 2.234 1.826 2.234 2.192 0 3.874-2.31 3.874-5.645 0-2.949-2.12-5.012-5.154-5.012-3.51 0-5.596 2.637-5.596 5.362 0 1.056.406 2.19.915 2.807.101.123.116.23.084.354-.091.39-.297 1.23-.336 1.4-.05.228-.165.277-.382.167-1.42-.662-2.31-2.724-2.31-4.387 0-3.57 2.597-6.847 7.493-6.847 3.94 0 6.999 2.811 6.999 6.567 0 3.928-2.468 7.086-5.904 7.086-1.152 0-2.237-.597-2.606-1.305 0 0-.554 2.104-.69 2.708-.25.95-.74 1.9-1.19 2.645 1.06.326 2.184.502 3.35.502C18.633 24 24 18.627 24 12.004 24 5.373 18.63 0 12.004 0z"/></svg>
+        </a>
+      </div>
+      <div class="subscribe-box">
+        <div class="subscribe-icon">★</div>
+        <div>
+          <h5>JOIN THE COVE!</h5>
+          <p>Subscribe for exclusive updates, early access, and more.</p>
+          <a href="subscription.html" class="btn btn-small">SUBSCRIBE NOW</a>
+        </div>
+      </div>
+    </section>
+  </div>
+</footer>
+
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
+
+

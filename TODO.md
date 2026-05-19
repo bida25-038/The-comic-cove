@@ -1,0 +1,4 @@
+- [x] Update viewport meta tag in all HTML pages to improve zoom/pinch zoom accessibility
+- [x] Add `html { text-size-adjust: 100%; }` to assets/css/style.css
+- [x] Re-search repo for remaining zoom blockers (zoom/transform/overflow-x patterns)
+- [x] Final verification steps (responsive layout at phone/tablet/desktop zoom)
