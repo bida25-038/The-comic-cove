@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="380" viewBox="0 0 1200 380">
+<defs>
+  <linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#08111c"/><stop offset="1" stop-color="#111827"/></linearGradient>
+</defs>
+<rect width="1200" height="380" rx="22" fill="url(#g)"/>
+<circle cx="170" cy="300" r="90" fill="#8c0d12" opacity=".7"/>
+<circle cx="1030" cy="290" r="88" fill="#16355f" opacity=".7"/>
+<text x="120" y="130" fill="#f5f5f5" font-family="Arial" font-size="54" font-weight="700">BE THE FIRST TO KNOW.</text>
+<text x="120" y="190" fill="#f0c55a" font-family="Arial" font-size="54" font-weight="700">BE PART OF THE COVE.</text>
+<text x="120" y="255" fill="#d5d5d5" font-family="Arial" font-size="26">Subscribe for new issue alerts, perks, and members-only drops.</text>
+<circle cx="930" cy="160" r="60" fill="#c51414"/>
+<rect x="915" y="132" width="30" height="72" rx="8" fill="#ffffff"/>
+<rect x="900" y="150" width="60" height="20" rx="8" fill="#ffffff"/>
+<circle cx="1060" cy="162" r="60" fill="#d4a53a"/>
+<path d="M1020 205 L1060 115 L1100 205 Z" fill="#08111c"/>
+</svg>
