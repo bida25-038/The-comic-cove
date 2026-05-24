@@ -187,13 +187,20 @@ button, input, select, textarea { font: inherit; }
 .contact-panel, .form-panel { background: linear-gradient(180deg, rgba(14,20,31,.95), rgba(7,13,21,.92)); border-radius: 12px; border: 1px solid rgba(255,255,255,.16); overflow: hidden; box-shadow: var(--shadow); }
 .panel-pad { padding: 24px; }
 .info-list { display: grid; gap: 14px; margin-bottom: 28px; }
-.info-item { display: grid; grid-template-columns: 26px 1fr; gap: 12px; color: var(--muted); }
+.info-item { display: grid; grid-template-columns: 24px 1fr; gap: 12px; color: var(--muted); align-items: start; }
+.info-icon { width: 24px; height: 24px; display: inline-flex; align-items: center; justify-content: center; color: var(--gold); flex-shrink: 0; margin-top: 2px; }
+.info-icon svg { width: 100%; height: 100%; fill: currentColor; }
 .hours p { margin: 8px 0; color: var(--muted); }
 .form-title { font-family: Impact, 'Arial Narrow Bold', sans-serif; font-size: 1.55rem; margin: 0 0 14px; }
 .field { margin-bottom: 14px; }
 .field input, .field textarea { width: 100%; background: rgba(255,255,255,.05); border: 1px solid rgba(255,255,255,.18); border-radius: 6px; padding: 14px 14px; color: var(--white); }
 .field textarea { min-height: 140px; resize: vertical; }
 .form-panel .btn { margin-top: 8px; }
+.contact-map { width: 100%; min-height: 280px; border-top: 1px solid rgba(255,255,255,.08); }
+.contact-map iframe { width: 100%; height: 280px; border: 0; display: block; }
+.form-status { margin-top: 12px; padding: 12px 14px; border-radius: 6px; font-size: .98rem; line-height: 1.5; min-height: 48px; }
+.form-status.success { background: rgba(16, 124, 64, .18); border: 1px solid rgba(101, 228, 142, .42); color: #dfffe9; }
+.form-status.error { background: rgba(176, 27, 27, .18); border: 1px solid rgba(255, 115, 115, .42); color: #ffe9e9; }
 /* ========== Footer ========== */
 .site-footer { margin-top: 36px; padding: 26px 0 38px; border-top: 1px solid var(--line); }
 .footer-grid { display: grid; grid-template-columns: 1.15fr .9fr .9fr 1.15fr; gap: 28px; }

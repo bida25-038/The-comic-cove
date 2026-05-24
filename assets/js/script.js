@@ -215,6 +215,35 @@ if (cartViewBtn) {
   });
 }
 
+const contactForm = document.querySelector('#contact-form');
+const contactStatus = document.querySelector('#contact-status');
+
+if (contactForm && contactStatus) {
+  contactForm.addEventListener('submit', (event) => {
+    event.preventDefault();
+
+    const formData = new FormData(contactForm);
+    const name = String(formData.get('name') || '').trim();
+    const email = String(formData.get('email') || '').trim();
+    const message = String(formData.get('message') || '').trim();
+
+    if (!name || !email || !message) {
+      contactStatus.textContent = 'Please complete all fields before sending your message.';
+      contactStatus.className = 'form-status error';
+      return;
+    }
+
+    const subject = encodeURIComponent(`Comic Cove inquiry from ${name}`);
+    const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${message}`);
+    const mailtoHref = `mailto:info@thecomiccove.com?subject=${subject}&body=${body}`;
+
+    window.location.href = mailtoHref;
+    contactStatus.textContent = 'Your email app has been opened with your message ready to send.';
+    contactStatus.className = 'form-status success';
+    contactForm.reset();
+  });
+}
+
 addButtons.forEach(btn => btn.addEventListener('click', () => {
   cartCount += 1;
   localStorage.setItem('comicCoveCartCount', String(cartCount));
