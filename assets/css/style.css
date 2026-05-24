@@ -172,6 +172,7 @@ button, input, select, textarea { font: inherit; }
 .plan li { margin: 12px 0; }
 .plan .btn-wrap { padding: 18px 22px 24px; }
 .plan .btn { width: 100%; min-height: 54px; font-size: 1.2rem; }
+.subscription-status { margin: 0; min-height: 24px; text-align: center; color: var(--white); font-weight: 600; }
 .feature-banner { border-radius: 14px; overflow: hidden; border: 1px solid rgba(255,255,255,.14); box-shadow: var(--shadow); }
 /* ========== About & Story Sections ========== */
 .about-grid { display: grid; grid-template-columns: 1.2fr .9fr; gap: 26px; align-items: start; }

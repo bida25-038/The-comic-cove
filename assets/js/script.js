@@ -244,6 +244,18 @@ if (contactForm && contactStatus) {
   });
 }
 
+const subscriptionStatus = document.querySelector('#subscription-status');
+const subscriptionButtons = document.querySelectorAll('[data-subscribe-plan]');
+
+if (subscriptionButtons.length && subscriptionStatus) {
+  subscriptionButtons.forEach((button) => {
+    button.addEventListener('click', () => {
+      const plan = button.dataset.subscribePlan;
+      subscriptionStatus.textContent = `${plan} subscription selected. This demo currently shows a confirmation message until a full checkout flow is added.`;
+    });
+  });
+}
+
 addButtons.forEach(btn => btn.addEventListener('click', () => {
   cartCount += 1;
   localStorage.setItem('comicCoveCartCount', String(cartCount));
